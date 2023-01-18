@@ -1,0 +1,1401 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nelson Bighetti" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Professor of Artificial Intelligence" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://cs.nyu.edu/courses/fall22/CSCI-UA.0002-008/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/courses/fall22/CSCI-UA.0002-008/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/courses/fall22/CSCI-UA.0002-008/css/wowchemy.fdeb09e237052632e0ec72f95561ab57.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+    <link rel="alternate" href="/courses/fall22/CSCI-UA.0002-008/index.xml" type="application/rss+xml" title="NYU CS 0002, Section 8" />
+  
+
+  
+    <link rel="manifest" href="/courses/fall22/CSCI-UA.0002-008/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/courses/fall22/CSCI-UA.0002-008/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/courses/fall22/CSCI-UA.0002-008/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://cs.nyu.edu/courses/fall22/CSCI-UA.0002-008/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="NYU CS 0002, Section 8" />
+  <meta property="og:url" content="https://cs.nyu.edu/courses/fall22/CSCI-UA.0002-008/" />
+  <meta property="og:title" content="NYU CS 0002, Section 8" />
+  <meta property="og:description" content="Professor of Artificial Intelligence" /><meta property="og:image" content="https://cs.nyu.edu/courses/fall22/CSCI-UA.0002-008/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://cs.nyu.edu/courses/fall22/CSCI-UA.0002-008/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite","url": "https://cs.nyu.edu/courses/fall22/CSCI-UA.0002-008/"
+}
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>NYU CS 0002, Section 8</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/courses/fall22/CSCI-UA.0002-008/js/wowchemy-init.min.7e85d6cfe81caeb57cc49452f9b55e03.js"></script>
+
+  
+
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">NYU CS 0002, Section 8</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">NYU CS 0002, Section 8</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/courses/fall22/CSCI-UA.0002-008/#instructor"><span>Course & Instructor</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/courses/fall22/CSCI-UA.0002-008/#syllabus"><span>Syllabus</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/courses/fall22/CSCI-UA.0002-008/#schedule"><span>Schedule</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="instructor" class="home-section wg-blank  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Course &amp; Instructor</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12 col-lg-8">
+    <p>Introduction to Computer Programming (in Python) (No Prior Experience)<br>
+Section 8<br>
+<a href="https://www.mattzeidenberg.com/" target="_blank" rel="noopener">Matt Zeidenberg</a><br>
+Clinical Associate Professor<br>
+<a href="https://cs.nyu.edu/home/index.html" target="_blank" rel="noopener">Department of Computer Science</a><br>
+Courant Institute of Mathematical Sciences<br>
+New York University<br>
+Warren Weaver Hall,  251 Mercer Street, Room 419<br>
+New York, New York 10012<br>
+email: <a href="mailto:mz3332@nyu.edu">mz3332@nyu.edu</a><br>
+Cell: 718-304-7609<br>
+Fax: 212-995-4124</p>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="syllabus" class="home-section wg-blank  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Syllabus</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12 col-lg-8">
+    <h2 id="meeting-time">Meeting Time</h2>
+<p>Tuesday /Thursday, 2-3:15 PM, Online
+- Zoom link: <a href="https://nyu.zoom.us/j/91384852521" target="_blank" rel="noopener">https://nyu.zoom.us/j/91384852521</a></p>
+<p>The above Zoom link can also be found in Brightspace under the &ldquo;Zoom&rdquo; tab.</p>
+<p>Sessions will be recorded, but live attendence is preferred if at all possible. Links to recordings of the Zoom meetings will also be found on
+Brightspace after they are made.</p>
+<h2 id="common-course-syllabus">Common Course Syllabus</h2>
+<p>There are 13 sections of this course that all cover the same
+material.</p>
+<p>General information regarding the course, topics covered, required textbooks, course tutors, etc. can be found on the <a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/common_syllabus.php" target="_blank" rel="noopener">Common Course Syllabus</a>.</p>
+<h2 id="office-hours">Office Hours</h2>
+<p>Office hours will be held on Zoom this semester on Tuesdays and Thursdays from 11 AM to 1 PM starting on Sept. 6.</p>
+<p>The Zoom link for office hours is <a href="https://nyu.zoom.us/j/92211652314" target="_blank" rel="noopener">https://nyu.zoom.us/j/92211652314</a> which can also be found in Brightspace under the &ldquo;Zoom&rdquo; tab.</p>
+<p>Please turn your camera on if possible when you connect.</p>
+<p>If you are unable to log on at these times and would like to talk to me, please email me for an appointment.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Three years of high school mathematics or equivalent. Students who have taken or are taking CSCI-UA 101 will not receive credit for this course. Note: This course does not count towards the major in computer science, although it is a prerequisite for students with no previous programming experience for CSCI-UA 101, Introduction to Computer Science (one can major in CS after taking 101). It is offered every semester in multiple sessions.</p>
+<h2 id="are-you-in-the-right-course">Are you in the right course?</h2>
+<p>If you have some limited experience with computer programming, you may want to take CSCI-UA.0003 (Introduction to Computer Programming, Limited Prior Experience) instead of this course.</p>
+<p>If you wish to place out of this course into CSCI-UA.0101 (Introduction to Computer Science) and you have experience with computer programming using C, C++, Java, JavaScript, Python or Matlab you should take the NYU Computer Science Placement Exam for Freshmen, even if you are a sophomore or junior. See the separate web page on the NYU Computer Science Placement Exam for Freshmen ( Sample Placement Exams ) You may use either C, C++, Java, JavaScript, Python or Matlab to answer the questions.</p>
+<p>Students should email the CS undergraduate program administrator at <a href="mailto:undergrad@cs.nyu.edu">undergrad@cs.nyu.edu</a> to set up a test.  Tests can be completed asynchronously and online, and should only take an hour to complete.</p>
+<h2 id="course-description">Course Description</h2>
+<p>This course is an gentle introduction to the fundamentals of computer programming, which is the foundation of computer science. Students will design, write and debug computer programs. No knowledge of programming is assumed.</p>
+<h2 id="course-tutors">Course Tutors</h2>
+<p>Tutoring will be held online via Zoom as well as in a limited, face to face manner for students on campus. For more information please visit the <a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/common_syllabus.php" target="_blank" rel="noopener">Common Course Syllabus</a>.</p>
+<h2 id="topics">Topics</h2>
+<p>In this course, we will study the fundamentals of computer programming. We will design, code, and debug programs using Python as we explore these concepts.</p>
+<h2 id="optional-textbooks">Optional Textbooks</h2>
+<p>You don&rsquo;t need to read or purchase a textbook for this class (sufficient materials will be available to you through the online modules and the lectures), but if you would like to do so, the following two texts are recommended.</p>
+<p>The first one is freely available online (you can also buy a printed copy). The second costs money, but you can save by buying a earlier (3rd or 4th) edition, which will work fine and would usually be cheaper.</p>
+<p><a href="https://greenteapress.com/wp/think-python-2e/" target="_blank" rel="noopener">Think Python, Second Edition</a> - Jeffrey Elkner, Allen B. Downey, and Chris Meyers</p>
+<p><a href="https://www.pearson.com/us/higher-education/program/Gaddis-My-Lab-Programming-with-Pearson-e-Text-Access-Card-for-Starting-out-with-Python-5th-Edition/PGM2889368.html" target="_blank" rel="noopener">Starting Out with Python</a> - 5th Edition - Tony Gaddis</p>
+<h2 id="course-format">Course Format</h2>
+<p>This course uses a &ldquo;blended learning&rdquo; format. This means is that a good portion of the lecture and reading material are presented in interactive online modules, which you will be expected to complete before the same topics are covered in class.</p>
+<p>The online modules contain video, text and interactive programming exercises. When you are finished wtih a module, you will be asked to take a short online quiz (via Brightspace) to test your understanding of the concepts presented in the module.</p>
+<p>One class period each week (the &ldquo;lecture,&rdquo; but I try to make it as interactve as possible) will focus on the application of the principles taught in the online learning module.</p>
+<p>Weekly assignments will be presented in the other class period, the &ldquo;workshop.&rdquo; I and a TA will be available in class to provide support and guidance in starting work on an assignment.</p>
+<h2 id="grading">Grading</h2>
+<p>Your grade in this course will be determined based on the breakdown below. Note that the following rubric serves as a guideline for how grades will be calculated. The final percentage allotted to each category is at my discretion.</p>
+<ul>
+<li>Assignments: 30%</li>
+<li>Quizzes: 10%</li>
+<li>In-class participation: 5%</li>
+<li>Midterm Exam: 25%</li>
+<li>Final Exam: 30%</li>
+</ul>
+<p>If you plan to continue with Computer Science courses such as CSCI-UA.0101, you <em>MUST</em> earn a grade of C or better in this course. No exceptions will be made. Exams may be curved at my discretion.</p>
+<h2 id="quizzes">Quizzes</h2>
+<p>There will be 11 online quizzes that go along with each online learning module. These quizzes contain a series of multiple choice questions and will be worth 10% of your final grade. Quizzes are delivered via Brightspace and can be attempted up to 5 times. Your most recent score will be the one recorded (not your highest score). The online quizzes should be completed before class on the day in which they are due. Please see the course schedule for a complete list of due dates.  &ldquo;Grace&rdquo; days (described below) do not apply to quizzes.</p>
+<h2 id="assignments">Assignments</h2>
+<p>There will be 11 assignments in this course that will be assigned on a weekly basis. For a full outline of assignment due dates please refer to the course schedule page.</p>
+<p>I suggest that you use cloud storage (e.g. Google Drive, Dropbox, etc.) to save your work on your assignments. That way, if your machine crashes, you won&rsquo;t lose your work. Also, remember to save your work frequently. Speaking as someone who has sometimes lost work, I say &ldquo;Save early, save often.&rdquo;</p>
+<p>It is important not to get behind in turning your assignments (this class is cumulative).  Late submissions will be penalized by 10% off per day late, and assignments that are more than 10 days late can not be turned in for credit.</p>
+<p>That being said, sometimes there are unforeseen situations that may impede your progress, as a result you are being given ten grace days for the entire semester. These grace days cover all late submissions regardless of personal, professional, or technical related delays (e.g. a job interview, computer hardware failure, etc.) and no further exceptions will be granted (so don&rsquo;t waste them simply by procrastinating). You don&rsquo;t need to do anything special to use these &ldquo;grace&rdquo; days - the course graders will keep track of these on your behalf and will apply them to your work as necessary.</p>
+<p>You will be using Brightspace to turn in your homework assignments.  It is your responsibility to make sure that your assignments have been submitted successfully.  You can do this by simply attempting to download your work after it has been uploaded to the system – if you are able to do so, your assignment was submitted successfully.</p>
+<p>For example, let&rsquo;s say you need a little extra time with Assignment #1 and you miss the deadline by one day. After you submit your program to Brightspace, and you would lose one grace day, leaving you with 9 for the rest of the semester. You can choose to &ldquo;mix and match&rdquo; how you use your grace days, and you do not need to let me know that you are using one (we will keep track of this information). If you run out of grace days and you turn in an assignment late you will be penalized by 10% per day late.</p>
+<h2 id="important-notes-on-assignment-submissions">Important Notes on Assignment Submissions</h2>
+<p>The submission time recorded on Brightspace is the only time that I can use for determining if an assignment was completed on time. Timestamps on your local computer that indicate that a file was not modified after a specific date are not something that I can take into account when it comes to late submissions. It is very easy to manipulate these timestamps.</p>
+<p>Please test your assignments thoroughly before submitting them to Brightspace.</p>
+<p>If you realize you want to change or update your assignment, just submit it to Brightspace again, as long as it is before the deadline. The graders will use the most recent version submitted.</p>
+<p>It is your responsibility to make sure that your assignments have been submitted successfully. You can do this by simply attempting to download your work after it has been uploaded to the system – if you are able to do so, your assignment was submitted successfully.</p>
+<p>Do not send your code files via email attachments. NYU&rsquo;s email servers will reject files with code files as attachments. If you are having trouble with Brightspace, you can send me code via a private message on Ed (see below for more on Ed).</p>
+<p>All grading will be done on Brightspace and you can check your grades at any time by logging in and clicking on the &ldquo;Grades&rdquo; tool.</p>
+<h2 id="collaboration--academic-integrity">Collaboration &amp; Academic Integrity</h2>
+<p>Assignments that you turn in should be your own work. It is fine to talk to other students and to get assistance in how to do something, but you should not ask your fellow students to actually do the work for you. When you turn in an assignment, you are saying that you have done this work yourself. The definition of plagiarism is to present someone else’s work as though it were your own. Please read the Computer Science Department <a href="https://cs.nyu.edu/home/undergrad/policy.html" target="_blank" rel="noopener">statement on academic integrity</a> for more information.</p>
+<p>We have software to detect copied programs. If student A turns in student B&rsquo;s program as their own, both students will receive a zero, and there may be other adverse consequences.</p>
+<p>With that said, you may work in pairs on assignments. If you choose to work with a partner both you and your partner must turn in your own copy of the assignment via Brightspace. If only one team member submits a copy of an assignment and the second team member does not submit anything the second team member will receive a grade of zero. If you are working as a team you should credit your partner as a comment at the top of your code. For example:</p>
+<pre><code>&quot;&quot;&quot;
+Assignment #1
+Vladimir Havlik (worked with Katherine Chan)
+&quot;&quot;&quot;
+</code></pre>
+<h2 id="support">Support</h2>
+<p>Computer science is similar to math, in that the material is cumulative in nature in that concepts build on each other. This means it&rsquo;s important that you not fall behind. If at any time you have questions, feel like you&rsquo;re falling behind, or don&rsquo;t understand the material there is always help available. The following resources are here to help you in the event you struggle with any concepts:</p>
+<ul>
+<li>
+<p>CS Tutors - Please refer to the <a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/common_syllabus.php" target="_blank" rel="noopener">common course syllabus</a> for more information on the types of tutoring that are offered. Before visiting a tutor please review our tutor and student guidelines for what is expected (tutors are not there to do your work for you.)</p>
+</li>
+<li>
+<p>CAS Tutors - the <a href="https://www.nyu.edu/students/academic-services/undergraduate-advisement/academic-resource-center/tutoring-and-learning.html" target="_blank" rel="noopener">University Learning Center</a> provides free tutoring.</p>
+</li>
+<li>
+<p>Office Hours</p>
+</li>
+</ul>
+<h2 id="information-about-ed">Information about Ed</h2>
+<p>Please sign up for the Ed system using this <a href="https://edstem.org/us/join/DPYpfg" target="_blank" rel="noopener">link</a></p>
+<p>Ed is an online discussion forum system that is designed to make it easy to have conversations around code.  Using Ed you will be able to ask me, the course tutors or your fellow students questions about course content and homework assignments.  For example, let&rsquo;s say you&rsquo;re having trouble understanding how to convert user input from a String to an Integer.  You can create a new thread on our Ed discussion forum with your question - including a live code snippet - and members of the class can respond and provide helpful hints to get you started.</p>
+<p>This semester we will be using Ed in two ways:</p>
+<p>Out of class questions: if you have a content-based question (i.e. a question about Python syntax, or about a homework assignment) you should ask that question using Ed instead of sending us an email. We find that many students have simliar questions, and responding these kinds of questions in a more public space will allow us to centralize answers to questions that can benefit all students in the class. Of course if you have a personal question or you&rsquo;d like to discuss your grade please send me a private email and I will get back to you as soon as I can.</p>
+<p>If you email me with a question of general interest, I will ask you to post it to Ed, and I or one of the other course staff will respond there. Also, feel free to respond to questions asked by other students.</p>
+<p>We will also be using Ed when I post problems on it and ask you to try to answer them in class. This activity counts for your in-class participation grade, which is 5 percent of your total grade, and must be completed during class time. It is not important that you get the right answer (although that&rsquo;s nice); you will get credit if you post something during class time. I&rsquo;m doing this to make the class more interactive and to encourage attendence. If you post a solution to 75% of the problems that I post during class, you will get full credit for in-class participation.</p>
+<p>To use Ed: when you&rsquo;re ready to ask a question simply click the &ldquo;New Thread&rdquo; button).  Then type your question in the box provided, using the &ldquo;code&rdquo; button (&quot;&lt;&gt;&quot;) to add in live Python3 code to your thread.</p>
+<p>Or you can reply to a thread that I or someone else has created.</p>
+<h2 id="software-for-python-programming">Software for Python Programming</h2>
+<p>The main software package that we will be working with this semester is the Python programming language.  Python is an open-source project, meaning it is available at no cost and anyone can contribute to it. You can download it for Mac or Windows at <a href="http://www.python.org/download" target="_blank" rel="noopener">http://www.python.org/download</a>. We will be using Python 3.x this semester.</p>
+<p>If you have a computer that cannot run Python, you can use an online code editing tool such as <a href="https://replit.com" target="_blank" rel="noopener">repl.it</a> or a private Ed workspace. Please contact me directly if you&rsquo;d like to discuss these options in greater detail.</p>
+<p>You can use <a href="https://docs.python.org/3/library/idle.html" target="_blank" rel="noopener">IDLE</a>, the programming editor built in to Python (it is installed when you install Python), or <a href="https://code.visualstudio.com/docs/languages/python" target="_blank" rel="noopener">Visual Studio Code</a> or another system (there are many that support Python; another good one is <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">PyCharm</a>) to develop your programs. I will be going over some of these options in class. You will be developing your programs as .py files and handing them in using Brightspace.</p>
+<p>In class, I will also be making heavy use of Google Colab, which is an online notebook system that allows you to intersperse Python code and written materials.</p>
+<h2 id="personal-computers">Personal Computers</h2>
+<p>Because this class involves in-class programming assignments, it&rsquo;s highly encouraged that you bring a laptop to class. If you don&rsquo;t have a laptop during in-class work, then you may work with a partner. Keep in mind that computers often have hardware related problems; I recommend storing your programs on cloud storage like Google Drive or Dropbox. If you do choose to save your programs locally on your computer, you should back it up frequently.  If you don&rsquo;t have a computer you can use the NYU computer labs (see below).</p>
+<h2 id="using-the-nyu-computing-facilities">Using the NYU Computing Facilities</h2>
+<p>NYU provides <a href="https://www.nyu.edu/life/information-technology/teaching-and-learning-services/studios-and-computing-labs/student-technology-centers-computer-labs.html" target="_blank" rel="noopener">computer labs</a> around campus.</p>
+<p>Note about saving your work in the labs: You will be able to save your work done in the ITS labs under your NYU Home Account and/or on your own flash drives. Although you can write to the hard disks of the machines in the labs, you cannot be sure that you will have access to the same machine the next time you enter the lab and the drives in the lab are frequently erased. The best option is to upload your files online and download them as needed.</p>
+<h2 id="department-information">Department Information</h2>
+<ul>
+<li><a href="https://cs.nyu.edu/home/index.html" target="_blank" rel="noopener">CS Department</a></li>
+<li><a href="https://cs.nyu.edu/home/undergrad/policy.html" target="_blank" rel="noopener">Statement of Academic Integrity</a></li>
+<li><a href="https://cs.nyu.edu/home/undergrad/minor_programs.html" target="_blank" rel="noopener">CS Minors (descriptions and requirements)</a></li>
+<li>Professional Clubs:
+<ul>
+<li><a href="https://nyuwinc.org/" target="_blank" rel="noopener">Women In Computing (WinC)</a></li>
+<li><a href="https://cs.nyu.edu/acm/site/" target="_blank" rel="noopener">NYU Chapter, Association for Computing Machinery (ACM)</a></li>
+<li><a href="https://techatnyu.org/" target="_blank" rel="noopener">Tech @ NYU (cross dept.)</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="disability-disclosure-statement">Disability Disclosure Statement</h2>
+<p>Academic accommodations are available for students with disabilities. Please contact the Moses Center for Students with Disabilities (212-998-4980 or <a href="mailto:mosescsd@nyu.edu">mosescsd@nyu.edu</a>) for further information. Students who are requesting academic accommodations are advised to reach out to the Moses Center as early as possible in the semester for assistance, although it can be done at any time during the semester.</p>
+<h2 id="feedback">Feedback</h2>
+<p>I recognize that every student has a different level of background knowledge and prior experience when it comes to technology. This course is designed as an introductory level class and topics will be presented assuming very little prior exposure to the topics. With that said, every student learns differently and I want to ensure that each of you is getting the maximum amount out of the course content as possible. Please do not hesitate to get in touch with me via email or during office hours if you feel as though you are falling behind or you are not understanding a particular concept.</p>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="schedule" class="home-section wg-blank  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Schedule</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12 col-lg-8">
+    <p>All of the self-paced learning modules have an associated quiz. The quizzes can be found under the quizzes tab in Brightspace. Assignments and quizzes are due before class on the due dates below.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Class</th>
+<th>Topics</th>
+<th>Due (before class)</th>
+<th>Assigned</th>
+<th>(Optional) Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Th 9/1</td>
+<td>01</td>
+<td>Review of the course and the syllabus; Overview of computing; Using IDLE, <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank" rel="noopener">Visual Studio CODE</a>, and <a href="https://replit.com" target="_blank" rel="noopener">Replit</a> for writing Python programs; <a href="https://docs.google.com/presentation/d/1DBaJhTihlzNHrXncRsbT_qCgHusKkOahmpvX-sHirEI/edit?usp=sharing" target="_blank" rel="noopener">lecture slides</a></td>
+<td></td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module01.php" target="_blank" rel="noopener">Self-paced learning module #1</a> and quiz</td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 9/6</td>
+<td>02</td>
+<td>Function calls; strings and string literals; variables; the &ldquo;input&rdquo; function; numeric literals and basic math operations; output formatting; <a href="https://colab.research.google.com/drive/1k2gYiGfMYBsBWb58RHIiqKFZxxrTV_eb?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>Self-paced learning module #1 and quiz</td>
+<td>Assignment #1, <a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module02.php" target="_blank" rel="noopener">Self-paced learning module #2</a> and quiz</td>
+<td><a href="https://www.pearson.com/us/higher-education/program/Gaddis-My-Lab-Programming-with-Pearson-e-Text-Access-Card-for-Starting-out-with-Python-5th-Edition/PGM2889368.html" target="_blank" rel="noopener">Gaddis</a> (text), chapters 1 &amp; 2</td>
+</tr>
+<tr>
+<td>Th 9/8</td>
+<td>03</td>
+<td>Data types (strings, floats, and ints); data type conversion; commenting your code; errors and error types; using the IDLE debugger; <a href="https://colab.research.google.com/drive/15fLeWdMggFdSG5Gc3frjFDKKGr_rwVe2?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>Self-paced learning module #2 and quiz</td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module03.php" target="_blank" rel="noopener">Self-paced learning module #3</a> and quiz</td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 9/13</td>
+<td>04</td>
+<td>Workshop</td>
+<td>Assignment #1 (due W 9/14 at 11:59 PM)</td>
+<td>Assignment #2</td>
+<td></td>
+</tr>
+<tr>
+<td>Th 9/15</td>
+<td>05</td>
+<td>One-way selection statements (&ldquo;if&rdquo;); boolean operators and boolean expressions; two-way selection statements (&ldquo;if&rdquo; &hellip; &ldquo;else&rdquo;); nested selection statements; string comparison; multi-way selection statements (&ldquo;if&rdquo; &hellip; &ldquo;elif&rdquo; &hellip; &ldquo;else&rdquo;); logical operators (&ldquo;and&rdquo;, &ldquo;or&rdquo;, &ldquo;not&rdquo;); boolean variables; generating random numbers; <a href="https://colab.research.google.com/drive/1ymD2GNn7hfdY02sqlTkdF9bTTLTvfLPl?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>Self-paced learning module #3 and quiz</td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module04.php" target="_blank" rel="noopener">Self-paced learning module #4</a> and quiz</td>
+<td>Gaddis, Chapter 3</td>
+</tr>
+<tr>
+<td>Tu 9/20</td>
+<td>06</td>
+<td>Workshop</td>
+<td>Assignment #2 (due W 9/21 at 11:59 PM)</td>
+<td>Assignment #3</td>
+<td></td>
+</tr>
+<tr>
+<td>Th 9/22</td>
+<td>07</td>
+<td>Introduction to repetition structures (&ldquo;loops&rdquo;); condition-controlled loops (the &ldquo;while&rdquo; loop); &ldquo;infinite loops&rdquo;; the &ldquo;break&rdquo; statement; using an accumulator variable to calculate running totals; augmented assignment operators; using sentinal values to control execution flow; the &ldquo;break&rdquo; statement; data validation using a &ldquo;while&rdquo; loop; <a href="https://colab.research.google.com/drive/1xbOJ687e1YXy1f74Yf1R1q9QyB5zLNjq?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>Self-paced learning module #4 and quiz</td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module05.php" target="_blank" rel="noopener">Self-paced learning module #5</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 9/27</td>
+<td>08</td>
+<td>Workshop</td>
+<td>Assignment #3 (due W 9/28 at 11:59 PM)</td>
+<td>Assignment #4</td>
+<td></td>
+</tr>
+<tr>
+<td>Th 9/29</td>
+<td>09</td>
+<td>Condition-Controlled (&ldquo;While&rdquo;) Loops Part II; Solving Problems with &ldquo;while&rdquo; loops; Turtle Graphics; <a href="https://colab.research.google.com/drive/1CBwnfhC4UCbrO86FqRdSF8ZtPLZCDAbs?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td></td>
+<td></td>
+<td>Gaddis, Chapter 4</td>
+</tr>
+<tr>
+<td>Tu 10/4</td>
+<td>10</td>
+<td>Count controlled loops (the “for” loop); the range() function; using loop targets in calculations; user-controlled ranges; using the range() function to iterate over ranges in reverse order; nested loops; <a href="https://colab.research.google.com/drive/1wBoL0M5dkUkJTSfQdZvoSc6t7vNPPdaf?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>Self-paced learning module #5 and quiz</td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module06.php" target="_blank" rel="noopener">Self-paced learning module #6</a> and quiz</td>
+<td></td>
+</tr>
+<tr>
+<td>Th 10/6</td>
+<td>11</td>
+<td>Workshop</td>
+<td>Assignment #4 (due F 10/7 at 11:59 PM)</td>
+<td>Assignment #5</td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 10/11</td>
+<td></td>
+<td>No Class: NYU on Monday schedule</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Th 10/13</td>
+<td>12</td>
+<td>Introduction to writing your own functions; variable scope (Global vs. Local variables); passing arguments to functions; global variables and global constants; writing value returning functions; Input, Processing, Output notation (IPO); modules &amp; Modular Design; <a href="https://colab.research.google.com/drive/1-hSGHF3GREDHT77NFWvhPqR_Eu5APM8a?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>Self-paced learning module #6 and quiz</td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module07.php" target="_blank" rel="noopener">Self-paced learning module #7</a> and quiz</td>
+<td>Gaddis, Chapter 5</td>
+</tr>
+<tr>
+<td>Tu 10/18</td>
+<td>13</td>
+<td>Workshop</td>
+<td>Assignment #5 (due W 10/19 at 11:59 PM)</td>
+<td>Assignment #6</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Th 10/20</td>
+<td>14</td>
+<td>Functions, Part II; <a href="https://colab.research.google.com/drive/1NxmCuboEe11S1UfGnfshkj1o4NNCSU9S?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 10/25</td>
+<td>15</td>
+<td>Midterm Exam Review Session; <a href="https://colab.research.google.com/drive/1Jmk-vbWAaS7XNA8BT8A6_W35chh1hxK6?usp=sharing" target="_blank" rel="noopener">review session notebook</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Th 10/27</td>
+<td>16</td>
+<td>Midterm Exam</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 11/1</td>
+<td>17</td>
+<td>String manipulation and processing text-based data, string slicing; <a href="https://colab.research.google.com/drive/1Ta3UyEitPrkfhGc8CSJ3Ue54D6WMAngU?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>self-paced learning module #7</td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module08.php" target="_blank" rel="noopener">Self-paced learning module #8</a> and quiz</td>
+<td>Gaddis, Chapter 8</td>
+</tr>
+<tr>
+<td>Th 11/3</td>
+<td>18</td>
+<td>Workshop</td>
+<td>Assignment #6 (due F 11/4 at 11:59 PM)</td>
+<td>Assignment #7</td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 11/8</td>
+<td>19</td>
+<td>The &ldquo;list&rdquo; data type; working with lists; sorting lists; getting the maximum and minimum values from a list; <a href="https://colab.research.google.com/drive/1TvuiSutQclB3_CKtsAUUVPrL9il8fdR2?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>Self-paced learning module #8 and quiz</td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module09.php" target="_blank" rel="noopener">Self-paced learning module #9</a> and quiz</td>
+<td>Gaddis, Chapter 7</td>
+</tr>
+<tr>
+<td>Th 11/10</td>
+<td>20</td>
+<td>Workshop</td>
+<td>Assignment #7 (due F 11/11 at 11:59 PM)</td>
+<td>Assignment #8</td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 11/15</td>
+<td>21</td>
+<td>Unpacking strings into lists; obtaining string data from the web; file input and output; <a href="https://colab.research.google.com/drive/1OXVV08hFS-BVA9PpLCijIjlhNcxQu_6a?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>self-paced learning module #9 and quiz</td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module10.php" target="_blank" rel="noopener">Self-paced learning module #10</a> and quiz</td>
+<td>Gaddis, Chapter 6</td>
+</tr>
+<tr>
+<td>Th 11/17</td>
+<td>22</td>
+<td>Workshop</td>
+<td>Assignment #8 (due F 11/18 at 11:59 PM)</td>
+<td>Assignment #9</td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 11/22</td>
+<td>23</td>
+<td>The &ldquo;dictionary&rdquo; data structure; <a href="https://colab.research.google.com/drive/1MdRhwHv2Vvu6tPFAEBqoq-aNpywJJgk0?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>self-paced learning module #10 and quiz</td>
+<td><a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module11.php" target="_blank" rel="noopener">Self-paced learning module #11</a> and quiz</td>
+<td>Gaddis, Chapter 9</td>
+</tr>
+<tr>
+<td>Th 11/24</td>
+<td></td>
+<td>No class, Thanksgiving</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 11/29</td>
+<td>24</td>
+<td>Workshop</td>
+<td>Assignment #9 (due W 11/30 at 11:59 PM)</td>
+<td>Assignment #10</td>
+<td></td>
+</tr>
+<tr>
+<td>Th 12/1</td>
+<td>25</td>
+<td>Object-oriented programming; <a href="https://colab.research.google.com/drive/1RRSJOQqhX-7S7bL1hv9C9r2AF-VarVl3?usp=sharing" target="_blank" rel="noopener">lecture notebook</a></td>
+<td>Self-paced learning module #11 and quiz</td>
+<td></td>
+<td>Gaddis, Chapter 10</td>
+</tr>
+<tr>
+<td>Tu 12/6</td>
+<td>26</td>
+<td>Workshop</td>
+<td>Assignment #10 (due W 12/7 at 11:59 PM)</td>
+<td>Assignment #11</td>
+<td></td>
+</tr>
+<tr>
+<td>Th 12/8</td>
+<td>27</td>
+<td>Final Exam Review</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tu 12/13</td>
+<td>28</td>
+<td>Final Exam Review</td>
+<td>Assignment #11 (due at 11:59 PM)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>W 12/21</td>
+<td>&ndash;</td>
+<td>Final Exam, Online, 2 PM to 3:50 PM</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/courses/fall22/CSCI-UA.0002-008/js/vendor-bundle.min.9592335d574f7a97010f99b90ad0f310.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/courses/fall22/CSCI-UA.0002-008/en/js/wowchemy.min.198c02c256b32de8a14cfe22fbf811b4.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
