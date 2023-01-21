@@ -10,7 +10,7 @@ columns: '1'
 ---
 
 Introduction to Computer Programming (in Python) (No Prior Experience)  
-Section 8  
+Section 11   
 [Matt Zeidenberg](https://www.mattzeidenberg.com/)  
 Clinical Associate Professor   
 [Department of Computer Science](https://cs.nyu.edu/home/index.html)   

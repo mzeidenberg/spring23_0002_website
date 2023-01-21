@@ -9,29 +9,33 @@ design:
 columns: '1'
 ---
 ## Meeting Time
-Tuesday /Thursday, 2-3:15 PM, Online
-    - Zoom link: https://nyu.zoom.us/j/91384852521
+Monday/Wednesday, 3:30-4:45 PM, 101 Warren Weaver Hall (The Courant Institute, 251 Mercer St.)
 
-The above Zoom link can also be found in Brightspace under the "Zoom" tab.
+In-person attendence is expected, but if you can't attend in person for some reason on a particular day, you 
+can connect to the Zoom for the class at https://nyu.zoom.us/j/91206327883
 
-Sessions will be recorded, but live attendence is preferred if at all possible. Links to recordings of the Zoom meetings will also be found on
-Brightspace after they are made.
+The above Zoom link can also be found in Brightspace under the "Zoom" tab. It would be helpful if you turn your
+camera on if you can.
+
+Sessions will be recorded, but live attendence is preferred if at all possible. Links to recordings of the Zoom meetings will also be found on Brightspace after they are made.
 
 ## Common Course Syllabus
 
-There are 13 sections of this course that all cover the same 
-material.
+There are 13 sections of this course that all cover the same material, although there is variation in the assignments 
+and exams by instructor.
 
 General information regarding the course, topics covered, required textbooks, course tutors, etc. can be found on the [Common Course Syllabus](https://cs.nyu.edu/elearning/CSCI_UA_0002/common_syllabus.php).
 
 ## Office Hours
-Office hours will be held on Zoom this semester on Tuesdays and Thursdays from 11 AM to 1 PM starting on Sept. 6.
+Office hours will be held in person and on Zoom this semester every weekday (except Friday) from 2 to 3 PM starting on Monday, Jan. 23rd.
 
-The Zoom link for office hours is https://nyu.zoom.us/j/92211652314 which can also be found in Brightspace under the "Zoom" tab.
+My office is 419 Warren Weaver Hall (the same building as class)) if you want to meet me in person.
+
+The Zoom link for office hours is https://nyu.zoom.us/j/96750082623 which can also be found in Brightspace under the "Zoom" tab.
 
 Please turn your camera on if possible when you connect.
 
-If you are unable to log on at these times and would like to talk to me, please email me for an appointment.
+If you are unavailable at these times and would like to talk to me, please email me for an appointment.
 
 ## Prerequisites
 Three years of high school mathematics or equivalent. Students who have taken or are taking CSCI-UA 101 will not receive credit for this course. Note: This course does not count towards the major in computer science, although it is a prerequisite for students with no previous programming experience for CSCI-UA 101, Introduction to Computer Science (one can major in CS after taking 101). It is offered every semester in multiple sessions.
@@ -98,6 +102,9 @@ You will be using Brightspace to turn in your homework assignments.  It is your 
 
 For example, let's say you need a little extra time with Assignment #1 and you miss the deadline by one day. After you submit your program to Brightspace, and you would lose one grace day, leaving you with 9 for the rest of the semester. You can choose to "mix and match" how you use your grace days, and you do not need to let me know that you are using one (we will keep track of this information). If you run out of grace days and you turn in an assignment late you will be penalized by 10% per day late.
 
+There may be some extra credit components to some of the assignments, but these will only count toward your assignment
+grades, and won't help you if you get a perfect score on the required parts of the assignments, only if you don't.
+
 ## Important Notes on Assignment Submissions
 
 The submission time recorded on Brightspace is the only time that I can use for determining if an assignment was completed on time. Timestamps on your local computer that indicate that a file was not modified after a specific date are not something that I can take into account when it comes to late submissions. It is very easy to manipulate these timestamps. 
@@ -135,7 +142,7 @@ Computer science is similar to math, in that the material is cumulative in natur
 * Office Hours 
 
 ## Information about Ed
-Please sign up for the Ed system using this [link](https://edstem.org/us/join/DPYpfg)
+The Ed discussion system is integrated into Brightspace.
 
 Ed is an online discussion forum system that is designed to make it easy to have conversations around code.  Using Ed you will be able to ask me, the course tutors or your fellow students questions about course content and homework assignments.  For example, let's say you're having trouble understanding how to convert user input from a String to an Integer.  You can create a new thread on our Ed discussion forum with your question - including a live code snippet - and members of the class can respond and provide helpful hints to get you started.
 
