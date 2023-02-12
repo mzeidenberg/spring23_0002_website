@@ -8,7 +8,7 @@ weight: 2  # section position on page
 design:
 columns: '1'
 ---
-All of the self-paced learning modules have an associated quiz. The quizzes can be found under the quizzes tab in Brightspace. Due dates for assignments and quizzes are shown below and will also be in Brightspace.
+All of the self-paced learning modules have an associated quiz. The quizzes can be found under the quizzes tab in Brightspace. Due dates for assignments and quizzes are shown below and will also be in Brightspace. Generally, quizzes are due before the next class after they are assigned, and assignments are due at midnight on the day following a workshop day.
 
 |Date  |Class|Topics                    |Due               |Assigned|(Optional) Reading|
 |------|-----|--------------------------|------------------|--------|------------------|
