@@ -30,7 +30,7 @@ All of the self-paced learning modules have an associated quiz. The quizzes can 
 |M 3/20|   14|Functions, Part II; [lecture notebook](https://colab.research.google.com/drive/1NxmCuboEe11S1UfGnfshkj1o4NNCSU9S?usp=sharing)||||
 |W 3/22|   15|Midterm Exam Review Session; [review session notebook](https://colab.research.google.com/drive/1Jmk-vbWAaS7XNA8BT8A6_W35chh1hxK6?usp=sharing)||||
 |M 3/27|   16|Midterm Exam||||
-|W 3/29|    17|String manipulation and processing text-based data, string slicing; [lecture notebook](https://colab.research.google.com/drive/1Ta3UyEitPrkfhGc8CSJ3Ue54D6WMAngU?usp=sharing)|self-paced learning module #7 |[Self-paced learning module #8](https://cs.nyu.edu/elearning/CSCI_UA_0002/module08.php) and quiz |Gaddis, Chapter 8|
+|W 3/29|    17|String manipulation and processing text-based data, string slicing; [lecture notebook](https://colab.research.google.com/drive/1Ta3UyEitPrkfhGc8CSJ3Ue54D6WMAngU?usp=sharing)|Self-paced learning module #7 and quiz|[Self-paced learning module #8](https://cs.nyu.edu/elearning/CSCI_UA_0002/module08.php) and quiz |Gaddis, Chapter 8|
 |M 4/3|   18|Workshop|Assignment #6 (due Tu 4/4 at 11:59 PM)|Assignment #7||
 |W 4/5|   19|The "list" data type; working with lists; sorting lists; getting the maximum and minimum values from a list; [lecture notebook](https://colab.research.google.com/drive/1TvuiSutQclB3_CKtsAUUVPrL9il8fdR2?usp=sharing) | Self-paced learning module #8 and quiz | [Self-paced learning module #9](https://cs.nyu.edu/elearning/CSCI_UA_0002/module09.php) and quiz |Gaddis, Chapter 7|
 |M 4/10|   20|Workshop|Assignment #7 (due Tu 4/11 at 11:59 PM)|Assignment #8||
