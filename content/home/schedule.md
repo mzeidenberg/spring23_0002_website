@@ -42,4 +42,4 @@ All of the self-paced learning modules have an associated quiz. The quizzes can 
 |M 5/1|   26|Workshop|Assignment #10 (due W 12/7 at 11:59 PM)|Assignment #11||
 |W 5/3|   27|Final Exam Review||||
 |M 5/8|   28|Final Exam Review|Assignment #11 (due at 11:59 PM)|||
-|TBA|   --|Final Exam, time and location to be announced|||
+|F 5/12|  --|Final Exam, 101 Warren Weaver Hall, 2-3:50 PM|||
