@@ -39,7 +39,7 @@ All of the self-paced learning modules have an associated quiz. The quizzes can 
 |W 4/19|   23|The "dictionary" data structure; [lecture notebook](https://colab.research.google.com/drive/1MdRhwHv2Vvu6tPFAEBqoq-aNpywJJgk0?usp=sharing)|self-paced learning module #10 and quiz|[Self-paced learning module #11](https://cs.nyu.edu/elearning/CSCI_UA_0002/module11.php) and quiz |Gaddis, Chapter 9|
 |M 4/24|   24|Workshop|Assignment #9 (due Tu 4/25 at 11:59 PM)|Assignment #10||
 |W 4/26|   25|Object-oriented programming; [lecture notebook](https://colab.research.google.com/drive/1RRSJOQqhX-7S7bL1hv9C9r2AF-VarVl3?usp=sharing)|Self-paced learning module #11 and quiz ||Gaddis, Chapter 10|
-|M 5/1|   26|Workshop|Assignment #10 (due W 12/7 at 11:59 PM)|Assignment #11||
+|M 5/1|   26|Workshop|Assignment #10 (due Tu 5/2 at 11:59 PM)|Assignment #11||
 |W 5/3|   27|Final Exam Review||||
 |M 5/8|   28|Final Exam Review|Assignment #11 (due at 11:59 PM)|||
 |F 5/12|  --|Final Exam, 101 Warren Weaver Hall, 2-3:50 PM|||
